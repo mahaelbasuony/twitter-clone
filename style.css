@@ -6,7 +6,6 @@ body{
 .container {
   display: flex;
   flex-flow: row nowrap;
-  background-color: black;
   width: 1230px;
   margin: auto;
   height: 100vh;
