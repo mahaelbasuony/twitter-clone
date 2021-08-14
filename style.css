@@ -6,8 +6,6 @@ body{
 .container {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: stretch;
   background-color: black;
   width: 1230px;
   margin: auto;
