@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #aaa;
+}
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: black;
+  width: 1230px;
+  margin: auto;
+  height: 100vh;
+}
+.left-item {
+  background-color: gray;
+  width: 250px;
+}
+.body-item {
+  background-color: red;
+  flex-grow: 1;
+  margin-right: 30px;
+}
+.right-item {
+  background-color: yellow;
+  width: 350px;
+}
