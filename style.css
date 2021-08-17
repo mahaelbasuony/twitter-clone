@@ -1,15 +1,17 @@
-:root{
-  --main-bg-color: #151F2B;
-  --border-color: #38444D;
+:root {
+  --main-bg-color: #151f2b;
+  --border-color: #38444d;
   --items-bg-color: #192734;
   --text-color: #ffffff;
-  --tweet-button-color: #1A91DA;
+  --tweet-button-color: #1a91da;
+  --item-bg-hover-color: #333b45;
 }
 body {
   margin: 0;
   padding: 0;
   background-color: var(--main-bg-color);
   color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container {
   display: flex;
@@ -19,7 +21,7 @@ body {
   height: 100vh;
 }
 .left-col {
-  width: 300px;
+  width: 250px;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -27,6 +29,7 @@ body {
 .nav-menu {
   height: 600px;
   margin-right: 30px;
+  margin-top: 16px;
 }
 .user-profile {
   border: 1px solid var(--border-color);
@@ -64,54 +67,48 @@ body {
   height: 342px;
   margin: 15px 0px 17px;
 }
-.fa {
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px;
-}
-.fa:hover {
-  background-color: var(--items-bg-color);
-  border-radius: 50%;
-}
-.fa-twitter {
-  color: white;
-}
-.nav-menu-list{
+.nav-menu-list {
   list-style-type: none;
   padding: 0px;
-  margin-top:0px;
-}
-.nav-items{
-  padding: 10px 0 0;
   margin-top: 0px;
 }
-.fa-icon{
-  font-size: 25px;
-  width: 10px;
-  text-decoration: none;
-  padding: 10px;
-  color: var(--text-color);
+.nav-items {
+  padding: 15px 0 0;
+  margin-top: 20px;
 }
-.fa-icon:hover{
-  background-color: var(--items-bg-color);
+.nav-container,
+.twitter-logo {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 16px;
+  color: var(--text-color);
   border-radius: 25px;
 }
-.tweet-button{
+.twitter-logo {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.twitter-logo:hover {
+  background-color: var(--items-bg-color);
+}
+.nav-container:hover {
+  background-color: var(--item-bg-hover-color);
+}
+.tweet-button {
   background-color: var(--tweet-button-color);
   border: none;
-   border-radius: 25px;
-   font-size: 16px;
-   width: 100%;
-   color: var(--text-color);
-   padding: 16px;
-   font-weight: bold;
+  border-radius: 25px;
+  font-size: 16px;
+  width: 100%;
+  color: var(--text-color);
+  padding: 16px;
+  font-weight: bold;
+  margin-top: 16px;
 }
-.tweet-button:hover{
+.tweet-button:hover {
   opacity: 0.7;
 }
-.nav-item{
-  font-family: Arial, Helvetica, sans-serif;
-  padding-left: 10px;
+.nav-item {
+  padding-left: 24px;
 }
