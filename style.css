@@ -5,11 +5,11 @@
   --text-color: #ffffff;
   --tweet-button-color: #1a91da;
   --item-bg-hover-color: #333b45;
-  --trends-bg-hover-items-color: #202F3A;
-  --trend-hashtag-tweets-color: #6D7B85;
-  --trend-more-info-color: #1DA1F2;
-  --trend-more-info-bg-color:#20394D;
-  --show-more-color: #1DA1F2;
+  --trends-bg-hover-items-color: #202f3a;
+  --trend-hashtag-tweets-color: #6d7b85;
+  --trend-more-info-color: #1da1f2;
+  --trend-more-info-bg-color: #20394d;
+  --show-more-color: #1da1f2;
 }
 
 body {
@@ -66,7 +66,7 @@ body {
   margin-top: 20px;
 }
 .nav-container,
-.twitter-logo{
+.twitter-logo {
   font-size: 20px;
   text-decoration: none;
   padding: 10px 16px;
@@ -103,8 +103,6 @@ body {
   padding-left: 24px;
 }
 
-
-
 .right-col {
   width: 350px;
   display: flex;
@@ -121,73 +119,68 @@ body {
   border-radius: 25px;
   margin: 15px 0px 15px;
 }
-.box-header{
+.box-header {
   display: flex;
   justify-content: space-between;
   padding: 20px 20px 0;
-  
-  
 }
-.trends-title{
+.trends-title {
   margin: 0;
 }
-.settings{
+.settings {
   padding: 8px;
   color: var(--text-color);
   border-radius: 50%;
 }
-.settings:hover{
+.settings:hover {
   background-color: var(--trends-bg-hover-items-color);
 }
-.trends{
+.trends {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
 }
-.trend{
+.trend {
   padding: 10px;
   padding-left: 20px;
   cursor: pointer;
 }
 
-.trend:hover{
+.trend:hover {
   background-color: var(--trends-bg-hover-items-color);
 }
-.hashtag{
-  font-size: 14px;
-color: var(--trend-hashtag-tweets-color);
-}
-.trend-name{
-margin-top: 2px;
-margin-bottom: 2px;
-}
-.number-of-tweets{
+.hashtag {
   font-size: 14px;
   color: var(--trend-hashtag-tweets-color);
-  
 }
-.trend-more-info{
+.trend-name {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.number-of-tweets {
+  font-size: 14px;
+  color: var(--trend-hashtag-tweets-color);
+}
+.trend-more-info {
   padding: 8px 10px;
   color: var(--trend-hashtag-tweets-color);
   border-radius: 50%;
   float: right;
-  
 }
-.trend-more-info:hover{
+.trend-more-info:hover {
   background-color: var(--trend-more-info-bg-color);
   color: var(--trend-more-info-color);
-  
 }
-.box-footer{
+.box-footer {
   display: flex;
 }
-.show-more{
+.show-more {
   text-decoration: none;
   color: var(--show-more-color);
   border-radius: 0 0 25px 25px;
   flex-grow:2;
   padding: 16px 20px;
 }
-.show-more:hover{
+.show-more:hover {
   background-color: var(--trends-bg-hover-items-color);
 }
