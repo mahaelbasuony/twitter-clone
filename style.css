@@ -108,7 +108,7 @@ body {
 }
 .tweet-button:hover {
   opacity: 0.9;
-  cursor: all-scroll;
+  cursor: pointer;
 }
 .nav-item {
   padding-left: 24px;
