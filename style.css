@@ -5,6 +5,9 @@
   --text-color: #ffffff;
   --tweet-button-color: #1a91da;
   --item-bg-hover-color: #333b45;
+  --placeholder-text-color: #8697a4;
+  --input-text-bg-color: #253341;
+  --item-focus-color: #208aca;
   --hover-items-bg-color: #202f3a;
   --hashtag-tweets-color: #6d7b85;
   --more-info-color: #1da1f2;
@@ -49,6 +52,49 @@ body {
   margin-right: 30px;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
+}
+.right-col {
+  width: 350px;
+  display: flex;
+  flex-flow: column;
+}
+.search-box {
+  margin-top: 5px;
+  width: 100%;
+  position: relative;
+  border-radius: 25px;
+}
+.search-field {
+  background-color: var(--input-text-bg-color);
+  border: 1px solid var(--input-text-bg-color);
+  color: var(--text-color);
+  border-radius: 25px;
+  padding: 14px 16px 14px;
+  padding-left: 50px;
+  width: calc(100% - 67px);
+  outline: none;
+}
+
+.search-field:focus {
+  background-color: transparent;
+  border: 1px solid var(--item-focus-color);
+}
+
+.search-field:focus + .search-icon {
+  color: var(--item-focus-color);
+}
+
+.search-icon {
+  position: absolute;
+  top: 0;
+  padding: 14px 14px 14px 24px;
+  color: var(--placeholder-text-color);
+}
+
+.trends-container {
+  background-color: var(--items-bg-color);
+  border-radius: 25px;
+  margin: 15px 0px 15px;
 }
 .follow-container {
   background-color: var(--items-bg-color);
@@ -107,12 +153,6 @@ body {
   width: 350px;
   display: flex;
   flex-flow: column;
-}
-.search-box {
-  background-color: var(--items-bg-color);
-  border-radius: 25px;
-  height: 52px;
-  margin-top: 17px;
 }
 .trends-container {
   background-color: var(--items-bg-color);
