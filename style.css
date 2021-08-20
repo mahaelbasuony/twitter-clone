@@ -5,6 +5,11 @@
   --text-color: #ffffff;
   --tweet-button-color: #1a91da;
   --item-bg-hover-color: #333b45;
+  --hover-items-bg-color: #202f3a;
+  --hashtag-tweets-color: #6d7b85;
+  --more-info-color: #1da1f2;
+  --more-info-bg-color: #20394d;
+  --show-more-color: #1da1f2;
 }
 
 body {
@@ -44,23 +49,6 @@ body {
   margin-right: 30px;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
-}
-.right-col {
-  width: 350px;
-  display: flex;
-  flex-flow: column;
-}
-.search-box {
-  background-color: var(--items-bg-color);
-  border-radius: 25px;
-  height: 52px;
-  margin-top: 17px;
-}
-.trends-container {
-  background-color: var(--items-bg-color);
-  border-radius: 25px;
-  height: 520px;
-  margin: 15px 0px 15px;
 }
 .follow-container {
   background-color: var(--items-bg-color);
@@ -113,4 +101,86 @@ body {
 }
 .nav-item {
   padding-left: 24px;
+}
+
+.right-col {
+  width: 350px;
+  display: flex;
+  flex-flow: column;
+}
+.search-box {
+  background-color: var(--items-bg-color);
+  border-radius: 25px;
+  height: 52px;
+  margin-top: 17px;
+}
+.trends-container {
+  background-color: var(--items-bg-color);
+  border-radius: 25px;
+  margin: 15px 0px 15px;
+}
+.box-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0;
+}
+.trends-title {
+  margin: 0;
+}
+.settings {
+  padding: 8px;
+  color: var(--text-color);
+  border-radius: 50%;
+}
+.settings:hover {
+  background-color: var(--hover-items-bg-color);
+}
+.trends {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.trend {
+  padding: 10px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.trend:hover {
+  background-color: var(--hover-items-bg-color);
+}
+.hashtag {
+  font-size: 14px;
+  color: var(--hashtag-tweets-color);
+}
+.trend-name {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.number-of-tweets {
+  font-size: 14px;
+  color: var(--hashtag-tweets-color);
+}
+.trend-more-info {
+  padding: 8px 10px;
+  color: var(--hashtag-tweets-color);
+  border-radius: 50%;
+  float: right;
+}
+.trend-more-info:hover {
+  background-color: var(--more-info-bg-color);
+  color: var(--more-info-color);
+}
+.box-footer {
+  display: flex;
+}
+.show-more {
+  text-decoration: none;
+  color: var(--show-more-color);
+  border-radius: 0 0 25px 25px;
+  width: 100%;
+  padding: 16px 20px;
+}
+.show-more:hover {
+  background-color: var(--hover-items-bg-color);
 }
