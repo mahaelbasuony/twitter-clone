@@ -5,7 +5,7 @@
   --text-color: #ffffff;
   --tweet-button-color: #1a91da;
   --item-bg-hover-color: #333b45;
-  --plaaceholder-text-color: #8697a4;
+  --placeholder-text-color: #8697a4;
   --input-text-bg-color: #253341;
   --item-focus-color: #208aca;
   --hover-items-bg-color: #202f3a;
@@ -88,7 +88,7 @@ body {
   position: absolute;
   top: 0;
   padding: 14px 14px 14px 24px;
-  color: var(--plaaceholder-text-color);
+  color: var(--placeholder-text-color);
 }
 
 .trends-container {
