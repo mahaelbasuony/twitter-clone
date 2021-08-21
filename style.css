@@ -96,12 +96,7 @@ body {
   border-radius: 25px;
   margin: 15px 0px 15px;
 }
-.follow-container {
-  background-color: var(--items-bg-color);
-  border-radius: 25px;
-  height: 342px;
-  margin: 15px 0px 17px;
-}
+
 .nav-menu-list {
   list-style-type: none;
   padding: 0px;
@@ -223,4 +218,65 @@ body {
 }
 .show-more:hover {
   background-color: var(--hover-items-bg-color);
+}
+.follow-container {
+  background-color: var(--items-bg-color);
+  border-radius: 25px;
+  
+}
+.follow-title{
+  margin: 0;
+  margin-bottom: 20px;
+}
+.follows {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.follow {
+  padding: 10px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.follow:hover {
+  background-color: var(--hover-items-bg-color);
+}
+.follow-info{
+  text-decoration: none;
+  display: flex;
+  flex-flow: row;
+}
+.user-img{
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+}
+.username{
+  color: var(--text-color);
+  margin: 0;
+  padding-left: 15px;
+  position: relative;
+}
+
+.follow-mention{
+  font-size: 14px;
+  color: var(--hashtag-tweets-color);
+  position: absolute;
+  left:15px;
+  top: 20px;
+  
+}
+.username:hover{
+  text-decoration: underline;
+}
+
+.follow-button{
+  padding:  8px 15px;
+  position: absolute;
+  margin-left: 240px;
+  margin-top: 2px;
+  cursor: pointer;
+  border-radius:  25px  ;
+  font-weight: bold;
 }
