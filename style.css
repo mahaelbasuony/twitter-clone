@@ -5,6 +5,7 @@
   --text-color: #ffffff;
   --tweet-button-color: #1a91da;
   --item-bg-hover-color: #333b45;
+  --gray-light: #2D3741;
   --placeholder-text-color: #8697a4;
   --input-text-bg-color: #253341;
   --item-focus-color: #208aca;
@@ -31,14 +32,14 @@ body {
   height: 100vh;
 }
 /* Ul style */
-ul{
+ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
 }
 /* Left column */
 .left-col {
-  width: 250px;
+  width: 275px;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -61,13 +62,6 @@ ul{
   height: 600px;
   margin-right: 30px;
   margin-top: 16px;
-}
-.user-profile {
-  border: 1px solid var(--border-color);
-  border-radius: 25px;
-  height: 60px;
-  margin-right: 30px;
-  margin-bottom: 17px;
 }
 .nav-menu-list {
   list-style-type: none;
@@ -113,6 +107,29 @@ ul{
   cursor: pointer;
 }
 /* Tweet Button - End */
+/* fast access settings - Start */
+.fast-access-settings {
+  border-radius: 36px;
+  padding: 10px 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 12px 12px 0;
+}
+
+.fast-access-settings .fa-ellipsis-h {
+  padding-right: 4px;
+  align-self: center;
+}
+
+.fast-access-settings:hover {
+  background-color: var(--gray-light);
+}
+.fast-access-settings .username-info:hover .username {
+  text-decoration: none;
+  color: var(--text-color);
+}
+/* fast access settings - Start */
 /* Content - Start */
 .content {
   flex-grow: 1;
@@ -273,7 +290,7 @@ ul{
   margin-top: 3px;
   color: var(--link-color);
 }
-.username-info:hover .username{
+.username-info:hover .username {
   text-decoration: underline;
   color: var(--text-color);
 }
