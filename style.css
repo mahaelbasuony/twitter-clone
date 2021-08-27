@@ -16,6 +16,11 @@
   --more-info-bg-color: #20394d;
   --show-more-color: #1da1f2;
   --blue-100:#1C9BE9;
+  --gray-700: #1C2732;
+  --green-100: 0, 186, 124;
+  --red-500: 249, 24, 128;
+
+
   --primary-font: Arial, Helvetica, sans-serif;
 }
 
@@ -138,7 +143,7 @@ ul {
 
 /* Content - Start */
 .content {
-  flex-grow: 1;
+  width: 600px;
   margin-right: 30px;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
@@ -432,3 +437,126 @@ ul {
   cursor: pointer;
 }
 /* Who to follow - End */
+
+/* tweet simple template - start */
+.tweet-template{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid var(--border-color);
+  padding: 8px;
+}
+.tweet-template:hover{
+  background-color: var(--gray-700);
+}
+.tweet-template .user-card{
+  width: 80px;
+  text-align: center;
+  display: block;
+}
+.tweet-template .user-card:hover{
+  opacity: 0.9;
+}
+.tweet-template-container{
+  display: flex;
+  flex-direction: column;
+   width: calc(100% - 80px); 
+
+}
+.tweet-options{
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.more-info-icon {
+  padding:  8px 10px;
+  color: var(--link-color);
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: 4px;
+}
+
+.tweet-options .tweet-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.tweet-options .tweet-info .username{
+  color: var(--text-color);
+  font-size: 15px;
+}
+.tweet-options .tweet-info .user-handel{
+  font-size: 15px;
+  color: var(--link-color);
+  margin-left: 4px;
+  margin-top: 0;
+}
+.user-container{
+  display:flex;
+}
+.user-container:hover .username{
+  text-decoration: underline;
+}
+.tweet-options .tweet-info .time-handel{
+  font-size: 15px;
+  color: var(--link-color);
+  margin-left: 4px;
+}
+.tweet-options .tweet-info .time-handel:hover{
+  text-decoration: underline;
+}
+.more-info-icon:hover {
+  background-color: var(--more-info-bg-color);
+  color: var(--more-info-color);
+}
+.tweet-content{
+  margin: 8px 0 ;
+}
+.tweet-actions{
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+.tweet-actions .tweet-action-icon{
+ flex-grow: 1;
+ color: var(--gray-800);
+ text-decoration: none;
+ font-size: 14px;
+}
+.tweet-action-icon .fa{
+  padding:8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.tweet-action-icon .fa-comment:hover{
+  background-color: var(--more-info-bg-color);
+  color: var(--more-info-color);
+}
+.tweet-action-icon .fa-comment:hover ~ span {
+  color: var(--more-info-color);
+}
+
+.tweet-action-icon .fa-retweet:hover{
+  background-color: rgba(var(--green-100),0.18);
+  color: rgb(var(--green-100));
+}
+.tweet-action-icon .fa-retweet:hover ~ span {
+  color: rgb(var(--green-100));
+}
+.tweet-action-icon .fa-heart:hover{
+  background-color: rgba(var(--red-500), 0.18);
+  color: rgb(var(--red-500));
+}
+.tweet-action-icon .fa-heart:hover ~ span {
+  color: rgb(var(--red-500));
+}
+.tweet-action-icon .fa-share:hover{
+  background-color: var(--more-info-bg-color);
+  color: var(--more-info-color);
+}
+
+/* tweet simple template - End */
