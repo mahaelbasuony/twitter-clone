@@ -212,7 +212,7 @@ ul {
   opacity: 0.9;
 }
 
-.options{
+.tweet-box-options{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -220,7 +220,7 @@ ul {
   padding-right: 12px;
 }
 
-.icon{
+.tweet-box-icon{
   display: inline;
   border-radius: 25px;
   padding: 6px;
@@ -229,7 +229,7 @@ ul {
   font-size: 15px;
   color: var(--blue-100);
 }
-.icon:hover{
+.tweet-box-icon:hover{
   background-color: var(--hover-items-bg-color);
 }
 .status{
@@ -246,7 +246,7 @@ ul {
   opacity: 0.4;
 }
 
-.hint{
+.privacy-box{
   display:none;
  
   border-bottom: 1px solid var(--border-color);
@@ -256,7 +256,7 @@ ul {
 }
 
 
-.hint-message{
+.privacy-message{
   text-decoration: none;
   color: var(--blue-100);
   font-size: 14px;
@@ -500,12 +500,12 @@ ul {
 .user-container:hover .username{
   text-decoration: underline;
 }
-.tweet-options .tweet-info .time-handel{
+.tweet-options .tweet-info .tweet-time{
   font-size: 15px;
   color: var(--link-color);
   margin-left: 4px;
 }
-.tweet-options .tweet-info .time-handel:hover{
+.tweet-options .tweet-info .tweet-time:hover{
   text-decoration: underline;
 }
 .more-info-icon:hover {
