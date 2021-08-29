@@ -263,7 +263,7 @@ ul {
   font-weight: bold;
 }
 
-.tweet-field:focus ~ .hint , .tweet-field:valid ~ .hint{
+.tweet-field:focus ~ .privacy-box , .tweet-field:valid ~ .privacy-box{
   display:block;
   
 }
