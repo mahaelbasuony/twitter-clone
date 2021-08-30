@@ -65,16 +65,16 @@
           </ul>
           <button class="left-col__tweet-button">Tweet</button>
         </div>
-        <div class="left-col__footer">
-            <a href="#" class="user-card">
-              <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
-              <div class="username-info">
-                <h3 class="username">Karma</h3>
-                <span class="user-handel">@MahaElbasuony</span>
-              </div>
-            </a>
-            <i class="fa fa-ellipsis-h"></i>
-        </div>
+        <div class="left-col__user-footer">
+          <a href="#" class="left-col__user-footer__user-card">
+            <img src="images/avatar.png" alt="avatar" class="left-col__user-footer__user-avatar"/>
+            <div class="left-col__user-footer__username-info">
+              <h3 class="left-col__user-footer__username">Karma</h3>
+              <span class="left-col__user-footer__user-handel">@MahaElbasuony</span>
+            </div>
+          </a>
+          <i class="fa fa-ellipsis-h left-col__user-footer_icon"></i>
+      </div>
     </div>
     <div class="content">
       <div class="content__header">
@@ -186,101 +186,101 @@
       </div>
     </div>
     <div class="right-col">
-      <div class="search-box">
-        <input type="text" placeholder="Search Twitter" name="search" class="search-field">
-        <i class="fa fa-search search-icon" ></i>
+      <div class="right-col__header">
+        <input type="text" placeholder="Search Twitter" name="search" class="right-col__header__search-field">
+        <i class="fa fa-search right-col__header__search-icon" ></i>
       </div>
-      <div class="trends-container">
-        <header class="box-header">
-          <h3 class="trends-title">Trends for you </h3>
-          <a href="#" class="settings" title="settings">
-            <i class="fa fa-cog"></i>
+      <div class="right-col__trends">
+        <header class="trends__header">
+          <h3 class="trends__header__title">Trends for you </h3>
+          <a href="#" class="trends__header__settings" title="settings">
+            <i class="fa fa-cog trends__header_settings__icon"></i>
           </a>
         </header>
         <ul>
-          <li class="trend">
-            <span class="hashtag">Trending In Nederlands</span>
-            <a href="#" class="trend-more-info" title="more">
+          <li class="trends__container">
+            <span class="trends__container__hashtag">Trending In Nederlands</span>
+            <a href="#" class="trends__container__more-info" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
-            <h4 class="trend-name">Bergkamp</h4>
-            <span class="number-of-tweets">1,391 tweets</span>
+            <h4 class="trends__container__title">Bergkamp</h4>
+            <span class="trends__container__number-of-tweets">1,391 tweets</span>
           </li>
-          <li class="trend">
-            <span class="hashtag">Trending In Nederlands</span>
-            <a href="#" class="trend-more-info" title="more">
+          <li class="trends__container">
+            <span class="trends__container__hashtag">Trending In Nederlands</span>
+            <a href="#" class="trends__container__more-info" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
-            <h4 class="trend-name">viruswaarheid</h4>
-            <span class="number-of-tweets">1,782 tweets</span>
+            <h4 class="trends__container__title">viruswaarheid</h4>
+            <span class="trends__container__number-of-tweets">1,782 tweets</span>
           </li>
-          <li class="trend">
-            <span class="hashtag">Trending In Nederlands</span>
-            <a href="#" class="trend-more-info" title="more">
+          <li class="trends__container">
+            <span class="trends__container__hashtag">Trending In Nederlands</span>
+            <a href="#" class="trends__container__more-info" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
-            <h4 class="trend-name">#kutrabobank</h4>
-            <span class="number-of-tweets">2,029 tweets</span>
+            <h4 class="trends__container__title">#kutrabobank</h4>
+            <span class="trends__container__number-of-tweets">2,029 tweets</span>
           </li>
-          <li class="trend">
-            <span class="hashtag">Policis . Trending</span>
-            <a href="#" class="trend-more-info" title="more">
+          <li class="trends__container">
+            <span class="trends__container__hashtag">Policis . Trending</span>
+            <a href="#" class="trends__container__more-info" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
-            <h4 class="trend-name">Kaag</h4>
-            <span class="number-of-tweets">19K tweets</span>
+            <h4 class="trends__container__title">Kaag</h4>
+            <span class="trends__container__number-of-tweets">19K tweets</span>
           </li>
-          <li class="trend">
-            <span class="hashtag">Auto racing . Trending</span>
-            <a href="#" class="trend-more-info" title="more">
+          <li class="trends__container">
+            <span class="trends__container__hashtag">Auto racing . Trending</span>
+            <a href="#" class="trends__container__more-info" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
-            <h4 class="trend-name">#DutchGP</h4>
-            <span class="number-of-tweets"></span>
+            <h4 class="trends__container__title">#DutchGP</h4>
+            <span class="trends__container__number-of-tweets"></span>
           </li>
         </ul>
-        <footer class="box-footer">
-          <a href="#" class="show-more">Show more</a>
+        <footer class="trends__footer">
+          <a href="#" class="trends__footer__show-more">Show more</a>
         </footer>
       </div>
-      <div class="follow-container">
-        <header class="box-header">
-          <h3 class="follow-title">Who to follow </h3>
+      <div class="right-col__follow">
+        <header class="follow__header">
+          <h3 class="follow__header__title">Who to follow </h3>
         </header>
         <ul>
-          <li class="follow">
-            <a href="#" class="user-card">
-              <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
-              <div class="username-info">
-                <h3 class="username">Karma</h3>
-                <span class="user-handel">@MahaElbasuony</span>
+          <li class="follow__container">
+            <a href="#" class="follow__container__user-card">
+              <img src="images/avatar.png" alt="avatar" class="follow__container__user-avatar"/>
+              <div class="follow__container__username-info">
+                <h3 class="follow__container__username">Karma</h3>
+                <span class="follow__container__user-handel">@MahaElbasuony</span>
               </div>
             </a>
-            <button class="follow-button" >Follow</button>
+            <button class="follow__container__button" >Follow</button>
           </li>
-          <li class="follow">
-            <a href="#" class="user-card">
-             <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
-             <div class="username-info">
-               <h3 class="username">Medhat</h3>
-               <span class="user-handel">@Medhatdawoud</span>
+          <li class="follow__container">
+            <a href="#" class="follow__container__user-card">
+             <img src="images/avatar.png" alt="avatar" class="follow__container__user-avatar"/>
+             <div class="follow__container__username-info">
+               <h3 class="follow__container__username">Medhat</h3>
+               <span class="follow__container__user-handel">@Medhatdawoud</span>
               </div>
             </a>
-            <button class="follow-button" >Follow</button>
+            <button class="follow__container__button" >Follow</button>
           </li>
-          <li class="follow">
-            <a href="#" class="user-card">
-             <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
-              <div class="username-info">
-               <h3 class="username">Karma</h3>
-               <span class="user-handel">@KarmaDawoud</span>
+          <li class="follow__container">
+            <a href="#" class="follow__container__user-card">
+             <img src="images/avatar.png" alt="avatar" class="follow__container__user-avatar"/>
+              <div class="follow__container__username-info">
+               <h3 class="follow__container__username">Karma</h3>
+               <span class="follow__container__user-handel">@KarmaDawoud</span>
               </div>
             </a>
-            <button class="follow-button" >Follow</button>
+            <button class="follow__container__button" >Follow</button>
            </li>
         </ul>
-        <footer class="box-footer">
-          <a href="#" class="show-more">Show more</a>
+        <footer class="follow__footer">
+          <a href="#" class="follow__footer__show-more">Show more</a>
         </footer>
       </div>
     </div>

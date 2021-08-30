@@ -134,7 +134,7 @@ ul {
 /* Tweet Button - End */
 
 /* fast access settings - Start */
-.left-col__footer {
+.left-col__user-footer {
   border-radius: 36px;
   padding: 10px 12px;
   cursor: pointer;
@@ -143,16 +143,27 @@ ul {
   margin: 0 12px 12px 0;
 }
 
-.left-col__footer .fa-ellipsis-h {
+.left-col__user-footer-icon{
   padding-right: 4px;
   align-self: center;
 }
 
-.left-col__footer:hover {
+.left-col__user-footer:hover {
   background-color: var(--gray-light);
 }
 
-.left-col__footer .username-info:hover .username {
+.left-col__user-footer__user-avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.left-col__user-footer__user-card {
+  display: inline-block;
+}
+.left-col__user-footer__username-info{
+  display: inline-block;
+}
+.left-col__user-footer__username-info:hover .left-col__user-footer__username {
   text-decoration: none;
   color: var(--text-color);
 }
@@ -469,20 +480,24 @@ ul {
 
 /*---------------------------------------->> Content - End <<------------------------------------------------ */
 
-/* right column  */
+/* --------------------------------------->> right column - Start<<------------------------------------------ */
+
 .right-col {
   width: 350px;
   display: flex;
   flex-flow: column;
 }
+
 /* Search box - Start */
-.search-box {
+
+.right-col__header {
   margin-top: 5px;
   width: 100%;
   position: relative;
   border-radius: 25px;
 }
-.search-field {
+
+.right-col__header__search-field {
   background-color: var(--input-text-bg-color);
   border: 1px solid var(--input-text-bg-color);
   color: var(--text-color);
@@ -493,140 +508,159 @@ ul {
   outline: none;
 }
 
-.search-field:focus {
+.right-col__header__search-field:focus {
   background-color: transparent;
   border: 1px solid var(--item-focus-color);
 }
 
-.search-field:focus + .search-icon {
+.right-col__header__search-field:focus + .right-col__header__search-icon {
   color: var(--item-focus-color);
 }
 
-.search-icon {
+.right-col__header__search-icon {
   position: absolute;
   top: 0;
   padding: 14px 14px 14px 24px;
   color: var(--placeholder-text-color);
 }
+
 /* Search box - End */
 
 /* Trends for you - Start */
-.trends-container {
+
+.right-col__trends{
   background-color: var(--items-bg-color);
   border-radius: 25px;
   margin: 15px 0px 15px;
 }
-.box-header {
+
+.trends__header {
   display: flex;
   justify-content: space-between;
   padding: 20px 20px 0;
 }
-.trends-title {
+
+.trends__header__title {
   margin: 0;
 }
-.settings {
+
+.trends__header__settings {
   padding: 8px;
   color: var(--text-color);
   border-radius: 50%;
 }
-.settings:hover {
+
+.trends__header__settings:hover {
   background-color: var(--hover-items-bg-color);
 }
-.trend {
+
+.trends__container {
   padding: 10px;
   padding-left: 20px;
   cursor: pointer;
 }
 
-.trend:hover {
+.trends__container:hover {
   background-color: var(--hover-items-bg-color);
 }
-.hashtag {
+
+.trends__container__hashtag {
   font-size: 14px;
   color: var(--link-color);
 }
-.trend-name {
+
+.trends__container__title {
   margin-top: 2px;
   margin-bottom: 2px;
 }
-.number-of-tweets {
+
+.trends__container__number-of-tweets {
   font-size: 14px;
   color: var(--link-color);
 }
-.trend-more-info {
+
+.trends__container__more-info {
   padding: 8px 10px;
   color: var(--link-color);
   border-radius: 50%;
   float: right;
 }
-.trend-more-info:hover {
+
+.trends__container__more-info:hover {
   background-color: var(--more-info-bg-color);
   color: var(--more-info-color);
 }
-.box-footer {
+
+.trends__footer {
   display: flex;
 }
-.show-more {
+
+.trends__footer__show-more {
   text-decoration: none;
   color: var(--show-more-color);
   border-radius: 0 0 25px 25px;
   width: 100%;
   padding: 16px 20px;
 }
-.show-more:hover {
+
+.trends__footer__show-more:hover {
   background-color: var(--hover-items-bg-color);
 }
+
 /* Trends for you - End */
 
 /* Who to follow - Start */
-.follow-container {
+
+.right-col__follow {
   background-color: var(--items-bg-color);
   border-radius: 25px;
 }
-.follow-title {
+
+.follow__header__title {
   margin: 0;
   margin-bottom: 20px;
 }
-.follow {
+
+.follow__container{
   padding: 10px 20px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
 }
-.follow:hover {
+.follow__container:hover {
   background-color: var(--hover-items-bg-color);
 }
-.user-card {
+.follow__container__user-card {
   text-decoration: none;
   display: flex;
   flex-flow: row;
 }
-.user-avatar {
+.follow__container__user-avatar {
   border-radius: 50%;
   width: 50px;
   height: 50px;
 }
-.username-info {
+.follow__container__username-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 12px;
 }
-.username {
+.follow__container__username {
   color: var(--text-color);
   margin: 0;
   font-size: 15px;
 }
-.user-handel {
+.follow__container__user-handel {
   font-size: 14px;
   margin-top: 3px;
   color: var(--link-color);
 }
-.username-info:hover .username {
+.follow__container__username-info:hover .follow__container__username {
   text-decoration: underline;
   color: var(--text-color);
 }
-.follow-button {
+.follow__container__button {
   font-weight: bold;
   padding: 8px 16px;
   align-self: center;
@@ -634,5 +668,21 @@ ul {
   border-radius: 25px;
   cursor: pointer;
 }
+.follow__footer {
+  display: flex;
+}
+.follow__footer__show-more {
+  text-decoration: none;
+  color: var(--show-more-color);
+  border-radius: 0 0 25px 25px;
+  width: 100%;
+  padding: 16px 20px;
+}
+
+.follow__footer__show-more:hover {
+  background-color: var(--hover-items-bg-color);
+}
+
 /* Who to follow - End */
 
+/* --------------------------------------->> right column - End<<------------------------------------------ */
