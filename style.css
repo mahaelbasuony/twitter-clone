@@ -140,7 +140,12 @@ ul {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 12px 12px 0;
+}
+
+.left-col__user-footer:hover {
+  background-color: var(--gray-light);
 }
 
 .left-col__user-footer-icon{
@@ -148,24 +153,33 @@ ul {
   align-self: center;
 }
 
-.left-col__user-footer:hover {
-  background-color: var(--gray-light);
-}
 
-.left-col__user-footer__user-avatar {
+.left-col__user-footer__avatar {
   border-radius: 50%;
   width: 50px;
   height: 50px;
 }
-.left-col__user-footer__user-card {
-  display: inline-block;
+.left-col__user-footer__card {
+  display:flex;
+  align-items: center;
 }
-.left-col__user-footer__username-info{
-  display: inline-block;
-}
-.left-col__user-footer__username-info:hover .left-col__user-footer__username {
+.left-col__user-footer__info{
+ 
   text-decoration: none;
+  display: inline-block;
+  padding-left: 10px;
+
+  
+}
+.left-col__user-footer__name {
   color: var(--text-color);
+  font-size: 15px;
+  margin:0;
+}
+.left-col__user-footer__handel {
+  font-size: 14px;
+  color: var(--link-color);
+  
 }
 
 /* fast access settings - End */
