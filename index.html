@@ -8,331 +8,279 @@
   <link rel="stylesheet"  href="style.css">
   <title>Twitter Clone</title>
 </head>
-<body>
-  <div class="container" >
+<body class="page">
+  <div class="page__inner" >
     <div class="left-col">
-        <div class="nav-menu">
-          <a href="#"  class="twitter-logo"> <i class="fa fa-twitter"></i></a>
-          <ul class="nav-menu-list">
-            <li class="nav-items">
-              <a href="#"  class="nav-container">
+        <div class="left-col__container">
+          <a href="#"  class="logo"> <i class="fa fa-twitter logo__icon"></i></a>
+          <ul class="left-col__menu">
+            <li class="menu-item">
+              <a href="#"  class="menu-item__container">
                 <i class="fa fa-home"></i>
-                <span class="nav-item">Home</span>
+                <span class="menu-item__text">Home</span>
               </a>
             </li>
-            <li class="nav-items">
-              <a href="#" class="nav-container">
+            <li class="menu-item">
+              <a href="#" class="menu-item__container">
                 <i class="fa fa-hashtag"></i>
-                <span class="nav-item">Explore</snap>
+                <span class="menu-item__text">Explore</snap>
               </a>
             </li>
-            <li class="nav-items">
-              <a href="#" class="nav-container">
+            <li class="menu-item">
+              <a href="#" class="menu-item__container">
                 <i class="fa fa-bell"></i>
-                <span class="nav-item">Notification</span>
+                <span class="menu-item__text">Notification</span>
               </a>
             </li>
-            <li class="nav-items">
-              <a href="#" class="nav-container">
+            <li class="menu-item">
+              <a href="#" class="menu-item__container">
                 <i class="fa fa-envelope"></i>
-                <span class="nav-item">Messages</span>
+                <span class="menu-item__text">Messages</span>
               </a>
             </li>
-            <li class="nav-items">
-              <a href="#" class="nav-container">
+            <li class="menu-item">
+              <a href="#" class="menu-item__container">
                 <i class="fa fa-bookmark"></i>
-                <span class="nav-item">Bookmarks</span>
+                <span class="menu-item__text">Bookmarks</span>
               </a>
             </li>
-            <li class="nav-items">
-              <a href="#" class="nav-container">
+            <li class="menu-item">
+              <a href="#" class="menu-item__container">
                 <i class="fa fa-list-alt"></i>
-                <span class="nav-item">Lists</span>
+                <span class="menu-item__text">Lists</span>
               </a>
             </li>
-            <li class="nav-items">
-              <a href="#" class="nav-container">
+            <li class="menu-item">
+              <a href="#" class="menu-item__container">
                 <i class="fa fa-user"></i>
-                <span class="nav-item">Profile</span>
+                <span class="menu-item__text">Profile</span>
               </a>
             </li>
-            <li class="nav-items">
-              <a href="#" class="nav-container">
+            <li class="menu-item">
+              <a href="#" class="menu-item__container">
                 <i class="fa fa-ellipsis-h"></i>
-                <span class="nav-item">More</span>
+                <span class="menu-item__text">More</span>
               </a>
             </li>
           </ul>
-          <button class="tweet-button">Tweet</button>
+          <button class="left-col__tweet-button">Tweet</button>
         </div>
-        <div class="fast-access-settings">
-            <a href="#" class="user-card">
-              <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
-              <div class="username-info">
-                <h3 class="username">Karma</h3>
-                <span class="user-handel">@MahaElbasuony</span>
-              </div>
-            </a>
-            <i class="fa fa-ellipsis-h"></i>
-        </div>
+        <div class="left-col__user-footer">
+          <a href="#" class="left-col__user-footer__card">
+            <img src="images/avatar.png" alt="avatar" class="left-col__user-footer__avatar"/>
+            <div class="left-col__user-footer__info">
+              <h3 class="left-col__user-footer__name">Karma</h3>
+              <span class="left-col__user-footer__handel">@MahaElbasuony</span>
+            </div>
+          </a>
+          <i class="fa fa-ellipsis-h left-col__user-footer_icon"></i>
+      </div>
     </div>
     <div class="content">
-      <div class="content-header">
-        <h2 class="content-header-item">Home</h2>
-        <i class="fa fa-certificate" title="Top Tweets"></i>
+      <div class="content__header">
+        <h2 class="content__header__text">Home</h2>
+        <i class="fa fa-certificate content__header_icon" title="Top Tweets"></i>
       </div>
       <div class="what-happening-box">
         <div class="tweet-box">
-          <a href="#" class="user-card">
-            <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
+          <a href="#" class="tweet-box__user-card">
+            <img src="images/avatar.png" alt="avatar" class="tweet-box__user-avatar"/>
           </a>
-          <div class="text-privacy-container">
-            <textarea name="tweet" class="tweet-field" cols="40" rows="1" placeholder="What's happening?" required></textarea>
-            <div class="privacy-box">
-              <a href="#"  class="privacy-message">
+          <div class="tweet-box__container">
+            <textarea name="tweet" class="tweet-box__field" cols="40" rows="1" placeholder="What's happening?" required></textarea>
+            <div class="tweet-box__privacy">
+              <a href="#"  class="tweet-box__privacy-message">
                   <i class="fa fa-globe"></i> Everyone can reply
               </a>
             </div>
           </div>
         </div>
-        <div class="tweet-box-options">
+        <div class="tweet-box__options">
           <div>
-            <a href="#" class="tweet-box-icon" title="Media"><i class="fa fa-image" ></i></a>
-            <a href="#" class="tweet-box-icon" title="GIF"><i class="fa fa-upload" ></i></a>
-            <a href="#" class="tweet-box-icon" title="Poll"><i class="fa fa-bars" ></i></a>
-            <a href="#" class="tweet-box-icon" title="Emoji"><i class="fa fa-comment" ></i></a>
-            <a href="#" class="tweet-box-icon" title="Schedule"><i class="fa fa-file" ></i></a>  
+            <a href="#" class="tweet-box__options__icon" title="Media"><i class="fa fa-image" ></i></a>
+            <a href="#" class="tweet-box__options__icon" title="GIF"><i class="fa fa-upload" ></i></a>
+            <a href="#" class="tweet-box__options__icon" title="Poll"><i class="fa fa-bars" ></i></a>
+            <a href="#" class="tweet-box__options__icon" title="Emoji"><i class="fa fa-comment" ></i></a>
+            <a href="#" class="tweet-box__options__icon" title="Schedule"><i class="fa fa-file" ></i></a>  
           </div>     
-          <button class="status" disabled>Tweet</button>
+          <button class="tweet-box__options-status" disabled>Tweet</button>
         </div>
       </div>
       <div class="tweet-template">
-        <a href="#" class="user-card">
-          <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
+        <a href="#" class="tweet-template__user-card">
+          <img src="images/avatar.png" alt="avatar" class="tweet-template__user-avatar"/>
         </a>
-        <div class="tweet-template-container">
-          <div class="tweet-options">
-            <div class="tweet-info">
-              <div class="user-container">
-                <h3 class="username">Medhat Dawoud</h3>
-                <span class="user-handel"> @Med7atDawoud .</span>
+        <div class="tweet-template__container">
+          <div class="tweet-template__header">
+            <div class="tweet-template__info">
+              <div class="tweet-template__user">
+                <h3 class="tweet-template__user__name">Medhat Dawoud</h3>
+                <span class="tweet-template__user__handel"> @Med7atDawoud .</span>
               </div>
-              <span class="tweet-time" title="10:30 PM.Aug 23, 2021">1h</span>
+              <span class="tweet-template__time" title="10:30 PM.Aug 23, 2021">1h</span>
             </div>
-            <a href="#" class="more-info-icon" title="more">
+            <a href="#" class="tweet-template__more-info-icon" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
           </div>
-          <p class="tweet-content">Tired of confusing infrastructure? Code, Deploy and Manage - All in your browser, zero-config. Let us know what you think:</p>
-          <div class="tweet-actions">
-            <a href="#" class="tweet-action-icon" title="Reply"><i class="fa fa-comment"></i><span>4</span></a>
-            <a href="#" class="tweet-action-icon" title="Retweet"><i class="fa fa-retweet" ></i><span>40</span></a>
-            <a href="#" class="tweet-action-icon" title="Like"><i class="fa fa-heart" ></i><span>90</span></a>
-            <a href="#" class="tweet-action-icon" title="Share"><i class="fa fa-share" ></i></a>  
+          <p class="tweet-template__content">Tired of confusing infrastructure? Code, Deploy and Manage - All in your browser, zero-config. Let us know what you think:</p>
+          <div class="tweet-template__footer">
+            <a href="#" class="tweet-template__footer__icon" title="Reply"><i class="fa fa-comment tweet-template__icon__reply tweet-template__icon"></i><span class="reply__times">4</span></a>
+            <a href="#" class="tweet-template__footer__icon" title="Retweet"><i class="fa fa-retweet tweet-template__icon__retweet tweet-template__icon" ></i><span class="retweet__times">40</span></a>
+            <a href="#" class="tweet-template__footer__icon" title="Like"><i class="fa fa-heart tweet-template__icon__like tweet-template__icon" ></i><span class="like__times">90</span></a>
+            <a href="#" class="tweet-template__footer__icon" title="Share"><i class="fa fa-share tweet-template__icon__share tweet-template__icon" ></i></a> 
           </div> 
         </div>
       </div>
       <div class="tweet-template">
-        <a href="#" class="user-card">
-          <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
+        <a href="#" class="tweet-template__user-card">
+          <img src="images/avatar.png" alt="avatar" class="tweet-template__user-avatar"/>
         </a>
-        <div class="tweet-template-container">
-          <div class="tweet-options">
-            <div class="tweet-info">
-              <div class="user-container">
-                <h3 class="username">Medhat Dawoud </h3>
-                <span class="user-handel"> @Med7atDawoud .</span>
+        <div class="tweet-template__container">
+          <div class="tweet-template__header">
+            <div class="tweet-template__info">
+              <div class="tweet-template__user">
+                <h3 class="tweet-template__user__name">Medhat Dawoud</h3>
+                <span class="tweet-template__user__handel"> @Med7atDawoud .</span>
               </div>
-              <span class="tweet-time" title="10:30 PM.Aug 23, 2021">1h</span>
+              <span class="tweet-template__time" title="10:30 PM.Aug 23, 2021">1h</span>
             </div>
-            <a href="#" class="more-info-icon" title="more">
+            <a href="#" class="tweet-template__more-info-icon" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
           </div>
-          <p class="tweet-content">Tired of confusing infrastructure? Code, Deploy and Manage - All in your browser, zero-config. Let us know what you think:</p>
-          <div class="tweet-actions">
-            <a href="#" class="tweet-action-icon" title="Reply"><i class="fa fa-comment"></i><span>4</span></a>
-            <a href="#" class="tweet-action-icon" title="Retweet"><i class="fa fa-retweet" ></i><span>40</span></a>
-            <a href="#" class="tweet-action-icon" title="Like"><i class="fa fa-heart" ></i><span>90</span></a>
-            <a href="#" class="tweet-action-icon" title="Share"><i class="fa fa-share" ></i></a>  
+          <p class="tweet-template__content">Tired of confusing infrastructure? Code, Deploy and Manage - All in your browser, zero-config. Let us know what you think:</p>
+          <div class="tweet-template__footer">
+            <a href="#" class="tweet-template__footer__icon" title="Reply"><i class="fa fa-comment tweet-template__icon__reply tweet-template__icon"></i><span class="reply__times">4</span></a>
+            <a href="#" class="tweet-template__footer__icon" title="Retweet"><i class="fa fa-retweet tweet-template__icon__retweet tweet-template__icon" ></i><span class="retweet__times">40</span></a>
+            <a href="#" class="tweet-template__footer__icon" title="Like"><i class="fa fa-heart tweet-template__icon__like tweet-template__icon" ></i><span class="like__times">90</span></a>
+            <a href="#" class="tweet-template__footer__icon" title="Share"><i class="fa fa-share tweet-template__icon__share tweet-template__icon" ></i></a> 
           </div> 
         </div>
       </div>
       <div class="tweet-template">
-        <a href="#" class="user-card">
-          <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
+        <a href="#" class="tweet-template__user-card">
+          <img src="images/avatar.png" alt="avatar" class="tweet-template__user-avatar"/>
         </a>
-        <div class="tweet-template-container">
-          <div class="tweet-options">
-            <div class="tweet-info">
-              <div class="user-container">
-                <h3 class="username">Medhat Dawoud </h3>
-                <span class="user-handel"> @Med7atDawoud .</span>
+        <div class="tweet-template__container">
+          <div class="tweet-template__header">
+            <div class="tweet-template__info">
+              <div class="tweet-template__user">
+                <h3 class="tweet-template__user__name">Medhat Dawoud</h3>
+                <span class="tweet-template__user__handel"> @Med7atDawoud .</span>
               </div>
-              <span class="tweet-time" title="10:30 PM.Aug 23, 2021">1h</span>
+              <span class="tweet-template__time" title="10:30 PM.Aug 23, 2021">1h</span>
             </div>
-            <a href="#" class="more-info-icon" title="more">
+            <a href="#" class="tweet-template__more-info-icon" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
           </div>
-          <p class="tweet-content">Tired of confusing infrastructure? Code, Deploy and Manage - All in your browser, zero-config. Let us know what you think:</p>
-          <div class="tweet-actions">
-            <a href="#" class="tweet-action-icon" title="Reply"><i class="fa fa-comment"></i><span>4</span></a>
-            <a href="#" class="tweet-action-icon" title="Retweet"><i class="fa fa-retweet" ></i><span>40</span></a>
-            <a href="#" class="tweet-action-icon" title="Like"><i class="fa fa-heart" ></i><span>90</span></a>
-            <a href="#" class="tweet-action-icon" title="Share"><i class="fa fa-share" ></i></a>  
-          </div> 
-        </div>
-      </div>
-      <div class="tweet-template">
-        <a href="#" class="user-card">
-          <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
-        </a>
-        <div class="tweet-template-container">
-          <div class="tweet-options">
-            <div class="tweet-info">
-              <div class="user-container">
-                <h3 class="username">Medhat Dawoud </h3>
-                <span class="user-handel"> @Med7atDawoud .</span>
-              </div>
-              <span class="tweet-time" title="10:30 PM.Aug 23, 2021">1h</span>
-            </div>
-            <a href="#" class="more-info-icon" title="more">
-              <i class="fa fa-ellipsis-h"></i>
-            </a>
-          </div>
-          <p class="tweet-content">Tired of confusing infrastructure? Code, Deploy and Manage - All in your browser, zero-config. Let us know what you think:</p>
-          <div class="tweet-actions">
-            <a href="#" class="tweet-action-icon" title="Reply"><i class="fa fa-comment"></i><span>4</span></a>
-            <a href="#" class="tweet-action-icon" title="Retweet"><i class="fa fa-retweet" ></i><span>40</span></a>
-            <a href="#" class="tweet-action-icon" title="Like"><i class="fa fa-heart" ></i><span>90</span></a>
-            <a href="#" class="tweet-action-icon" title="Share"><i class="fa fa-share" ></i></a>  
-          </div> 
-        </div>
-      </div>
-      <div class="tweet-template">
-        <a href="#" class="user-card">
-          <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
-        </a>
-        <div class="tweet-template-container">
-          <div class="tweet-options">
-            <div class="tweet-info">
-              <div class="user-container">
-                <h3 class="username">Medhat Dawoud </h3>
-                <span class="user-handel"> @Med7atDawoud .</span>
-              </div>
-              <span class="tweet-time" title="10:30 PM.Aug 23, 2021">1h</span>
-            </div>
-            <a href="#" class="more-info-icon" title="more">
-              <i class="fa fa-ellipsis-h"></i>
-            </a>
-          </div>
-          <p class="tweet-content">Tired of confusing infrastructure? Code, Deploy and Manage - All in your browser, zero-config. Let us know what you think:</p>
-          <div class="tweet-actions">
-            <a href="#" class="tweet-action-icon" title="Reply"><i class="fa fa-comment"></i><span>4</span></a>
-            <a href="#" class="tweet-action-icon" title="Retweet"><i class="fa fa-retweet" ></i><span>40</span></a>
-            <a href="#" class="tweet-action-icon" title="Like"><i class="fa fa-heart" ></i><span>90</span></a>
-            <a href="#" class="tweet-action-icon" title="Share"><i class="fa fa-share" ></i></a>  
+          <p class="tweet-template__content">Tired of confusing infrastructure? Code, Deploy and Manage - All in your browser, zero-config. Let us know what you think:</p>
+          <div class="tweet-template__footer">
+            <a href="#" class="tweet-template__footer__icon" title="Reply"><i class="fa fa-comment tweet-template__icon__reply tweet-template__icon"></i><span class="reply__times">4</span></a>
+            <a href="#" class="tweet-template__footer__icon" title="Retweet"><i class="fa fa-retweet tweet-template__icon__retweet tweet-template__icon" ></i><span class="retweet__times">40</span></a>
+            <a href="#" class="tweet-template__footer__icon" title="Like"><i class="fa fa-heart tweet-template__icon__like tweet-template__icon" ></i><span class="like__times">90</span></a>
+            <a href="#" class="tweet-template__footer__icon" title="Share"><i class="fa fa-share tweet-template__icon__share tweet-template__icon" ></i></a> 
           </div> 
         </div>
       </div>
     </div>
     <div class="right-col">
-      <div class="search-box">
-        <input type="text" placeholder="Search Twitter" name="search" class="search-field">
-        <i class="fa fa-search search-icon" ></i>
+      <div class="right-col__header">
+        <input type="text" placeholder="Search Twitter" name="search" class="right-col__header__search-field">
+        <i class="fa fa-search right-col__header__search-icon" ></i>
       </div>
-      <div class="trends-container">
-        <header class="box-header">
-          <h3 class="trends-title">Trends for you </h3>
-          <a href="#" class="settings" title="settings">
-            <i class="fa fa-cog"></i>
+      <div class="right-col__trends">
+        <header class="trends__header">
+          <h3 class="trends__header__title">Trends for you </h3>
+          <a href="#" class="trends__header__settings" title="settings">
+            <i class="fa fa-cog trends__header_settings__icon"></i>
           </a>
         </header>
         <ul>
-          <li class="trend">
-            <span class="hashtag">Trending In Nederlands</span>
-            <a href="#" class="trend-more-info" title="more">
+          <li class="trends__container">
+            <span class="trends__container__hashtag">Trending In Nederlands</span>
+            <a href="#" class="trends__container__more-info" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
-            <h4 class="trend-name">Bergkamp</h4>
-            <span class="number-of-tweets">1,391 tweets</span>
+            <h4 class="trends__container__title">Bergkamp</h4>
+            <span class="trends__container__number-of-tweets">1,391 tweets</span>
           </li>
-          <li class="trend">
-            <span class="hashtag">Trending In Nederlands</span>
-            <a href="#" class="trend-more-info" title="more">
+          <li class="trends__container">
+            <span class="trends__container__hashtag">Trending In Nederlands</span>
+            <a href="#" class="trends__container__more-info" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
-            <h4 class="trend-name">viruswaarheid</h4>
-            <span class="number-of-tweets">1,782 tweets</span>
+            <h4 class="trends__container__title">viruswaarheid</h4>
+            <span class="trends__container__number-of-tweets">1,782 tweets</span>
           </li>
-          <li class="trend">
-            <span class="hashtag">Trending In Nederlands</span>
-            <a href="#" class="trend-more-info" title="more">
+          <li class="trends__container">
+            <span class="trends__container__hashtag">Trending In Nederlands</span>
+            <a href="#" class="trends__container__more-info" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
-            <h4 class="trend-name">#kutrabobank</h4>
-            <span class="number-of-tweets">2,029 tweets</span>
+            <h4 class="trends__container__title">#kutrabobank</h4>
+            <span class="trends__container__number-of-tweets">2,029 tweets</span>
           </li>
-          <li class="trend">
-            <span class="hashtag">Policis . Trending</span>
-            <a href="#" class="trend-more-info" title="more">
+          <li class="trends__container">
+            <span class="trends__container__hashtag">Policis . Trending</span>
+            <a href="#" class="trends__container__more-info" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
-            <h4 class="trend-name">Kaag</h4>
-            <span class="number-of-tweets">19K tweets</span>
+            <h4 class="trends__container__title">Kaag</h4>
+            <span class="trends__container__number-of-tweets">19K tweets</span>
           </li>
-          <li class="trend">
-            <span class="hashtag">Auto racing . Trending</span>
-            <a href="#" class="trend-more-info" title="more">
+          <li class="trends__container">
+            <span class="trends__container__hashtag">Auto racing . Trending</span>
+            <a href="#" class="trends__container__more-info" title="more">
               <i class="fa fa-ellipsis-h"></i>
             </a>
-            <h4 class="trend-name">#DutchGP</h4>
-            <span class="number-of-tweets"></span>
+            <h4 class="trends__container__title">#DutchGP</h4>
+            <span class="trends__container__number-of-tweets"></span>
           </li>
         </ul>
-        <footer class="box-footer">
-          <a href="#" class="show-more">Show more</a>
+        <footer class="trends__footer">
+          <a href="#" class="trends__footer__show-more">Show more</a>
         </footer>
       </div>
-      <div class="follow-container">
-        <header class="box-header">
-          <h3 class="follow-title">Who to follow </h3>
+      <div class="right-col__follow">
+        <header class="follow__header">
+          <h3 class="follow__header__title">Who to follow </h3>
         </header>
         <ul>
-          <li class="follow">
-            <a href="#" class="user-card">
-              <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
-              <div class="username-info">
-                <h3 class="username">Karma</h3>
-                <span class="user-handel">@MahaElbasuony</span>
+          <li class="follow__container">
+            <a href="#" class="follow__container__user-card">
+              <img src="images/avatar.png" alt="avatar" class="follow__container__user-avatar"/>
+              <div class="follow__container__username-info">
+                <h3 class="follow__container__username">Karma</h3>
+                <span class="follow__container__user-handel">@MahaElbasuony</span>
               </div>
             </a>
-            <button class="follow-button" >Follow</button>
+            <button class="follow__container__button" >Follow</button>
           </li>
-          <li class="follow">
-            <a href="#" class="user-card">
-             <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
-             <div class="username-info">
-               <h3 class="username">Medhat</h3>
-               <span class="user-handel">@Medhatdawoud</span>
+          <li class="follow__container">
+            <a href="#" class="follow__container__user-card">
+             <img src="images/avatar.png" alt="avatar" class="follow__container__user-avatar"/>
+             <div class="follow__container__username-info">
+               <h3 class="follow__container__username">Medhat</h3>
+               <span class="follow__container__user-handel">@Medhatdawoud</span>
               </div>
             </a>
-            <button class="follow-button" >Follow</button>
+            <button class="follow__container__button" >Follow</button>
           </li>
-          <li class="follow">
-            <a href="#" class="user-card">
-             <img src="images/avatar.png" alt="avatar" class="user-avatar"/>
-              <div class="username-info">
-               <h3 class="username">Karma</h3>
-               <span class="user-handel">@KarmaDawoud</span>
+          <li class="follow__container">
+            <a href="#" class="follow__container__user-card">
+             <img src="images/avatar.png" alt="avatar" class="follow__container__user-avatar"/>
+              <div class="follow__container__username-info">
+               <h3 class="follow__container__username">Karma</h3>
+               <span class="follow__container__user-handel">@KarmaDawoud</span>
               </div>
             </a>
-            <button class="follow-button" >Follow</button>
+            <button class="follow__container__button" >Follow</button>
            </li>
         </ul>
-        <footer class="box-footer">
-          <a href="#" class="show-more">Show more</a>
+        <footer class="follow__footer">
+          <a href="#" class="follow__footer__show-more">Show more</a>
         </footer>
       </div>
     </div>
