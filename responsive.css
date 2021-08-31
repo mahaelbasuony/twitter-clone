@@ -1,0 +1,34 @@
+@media screen and (max-width:1295px){
+  .page__inner{
+    width: 1000px;
+  }
+
+ .left-col{
+   width: auto;
+   align-items: flex-end;
+ }
+ 
+ .left-col__container{
+  margin-right:0;
+ }
+ 
+
+ .left-col__menu__text{
+   display: none;
+ }
+
+ .left-col__menu__container{
+
+  font-size: 25px;
+ }
+ .left-col__user-footer__info, .left-col__user-footer__icon{
+   display: none;
+ }
+ .left-col__tweet-button{
+   display: none;
+ }
+ .left-col__tweet-button__icon{
+   display: block;
+  
+ }
+}

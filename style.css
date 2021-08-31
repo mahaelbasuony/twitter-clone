@@ -43,7 +43,7 @@ ul {
 .page__inner {
   display: flex;
   flex-flow: row nowrap;
-  width: 1230px;
+  width: 1230px; 
   margin: auto;
   height: 100vh;
 }
@@ -91,16 +91,16 @@ ul {
   margin-top: 0px;
 }
 
-.menu-item {
+.left-col__menu__item {
   padding: 15px 0 0;
   margin-top: 20px;
 }
 
-.menu-item__text{
+.left-col__menu__text{
   padding-left: 24px;
 }
 
-.menu-item__container {
+.left-col__menu__container {
   font-size: 20px;
   text-decoration: none;
   padding: 10px 16px;
@@ -108,7 +108,7 @@ ul {
   border-radius: 25px;
 }
 
-.menu-item__container:hover {
+.left-col__menu__container:hover {
   background-color: var(--item-bg-hover-color);
 }
 
@@ -126,8 +126,19 @@ ul {
   font-weight: bold;
   margin-top: 30px;
 }
-
-.left-col__tweet-button:hover {
+.left-col__tweet-button__icon{
+  background-color: var(--tweet-button-color);
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  color: var(--text-color);
+  padding: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-right: 24px;
+  display: none;
+}
+.left-col__tweet-button:hover , .left-col__tweet-button__icon:hover{
   opacity: 0.9;
   cursor: pointer;
 }
