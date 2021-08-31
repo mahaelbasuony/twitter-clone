@@ -162,14 +162,12 @@ ul {
 .left-col__user-footer__card {
   display:flex;
   align-items: center;
+  text-decoration: none;
 }
 .left-col__user-footer__info{
  
-  text-decoration: none;
   display: inline-block;
   padding-left: 10px;
-
-  
 }
 .left-col__user-footer__name {
   color: var(--text-color);
@@ -631,8 +629,8 @@ ul {
 }
 
 .follow__header__title {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 15px 0 15px 20px ;
+  
 }
 
 .follow__container{
