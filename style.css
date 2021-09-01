@@ -99,11 +99,17 @@ ul {
 .left-col__menu__text{
   padding-left: 24px;
 }
-
+.left-col__menu__icon{
+  width:20px;
+  height:20px;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+}
 .left-col__menu__container {
   font-size: 20px;
   text-decoration: none;
-  padding: 10px 16px;
+  padding: 10px 24px 10px 10px;
   color: var(--text-color);
   border-radius: 25px;
 }
@@ -129,10 +135,10 @@ ul {
 .left-col__tweet-button__icon{
   background-color: var(--tweet-button-color);
   border: none;
-  border-radius: 25px;
-  font-size: 16px;
+  border-radius: 50%;
+  font-size: 20px;
   color: var(--text-color);
-  padding: 16px;
+  padding: 18px 20px;
   font-weight: bold;
   margin-top: 30px;
   margin-right: 24px;
