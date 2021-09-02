@@ -107,7 +107,7 @@ ul {
   align-content: center;
 }
 .left-col__menu__container {
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   padding: 10px 24px 10px 10px;
   color: var(--text-color);
@@ -141,7 +141,6 @@ ul {
   padding: 18px 20px;
   font-weight: bold;
   margin-top: 30px;
-  margin-right: 24px;
   display: none;
 }
 .left-col__tweet-button:hover , .left-col__tweet-button__icon:hover{
@@ -159,6 +158,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   margin: 0 12px 12px 0;
+  
 }
 
 .left-col__user-footer:hover {
@@ -173,8 +173,8 @@ ul {
 
 .left-col__user-footer__avatar {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .left-col__user-footer__card {
   display:flex;
