@@ -43,7 +43,7 @@ ul {
 .page__inner {
   display: flex;
   flex-flow: row nowrap;
-  width: 1230px;
+  width: 1230px; 
   margin: auto;
   height: 100vh;
 }
@@ -91,24 +91,32 @@ ul {
   margin-top: 0px;
 }
 
-.menu-item {
+.left-col__menu__item {
   padding: 15px 0 0;
   margin-top: 20px;
 }
 
-.menu-item__text{
+.left-col__menu__text{
   padding-left: 24px;
 }
-
-.menu-item__container {
+.left-col__menu__icon{
+  width:20px;
+  height:20px;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 25px;
+}
+.left-col__menu__container {
   font-size: 20px;
   text-decoration: none;
-  padding: 10px 16px;
+  padding: 10px 24px 10px 10px;
   color: var(--text-color);
   border-radius: 25px;
+  font-weight: bold;
 }
 
-.menu-item__container:hover {
+.left-col__menu__container:hover {
   background-color: var(--item-bg-hover-color);
 }
 
@@ -126,8 +134,19 @@ ul {
   font-weight: bold;
   margin-top: 30px;
 }
-
-.left-col__tweet-button:hover {
+.left-col__tweet-button__icon{
+  background-color: var(--tweet-button-color);
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--text-color);
+  padding: 18px 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  display: none;
+  
+}
+.left-col__tweet-button:hover , .left-col__tweet-button__icon:hover{
   opacity: 0.9;
   cursor: pointer;
 }
@@ -141,7 +160,8 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 12px 12px 0;
+  margin: 0 4px 12px;
+  
 }
 
 .left-col__user-footer:hover {
@@ -156,8 +176,8 @@ ul {
 
 .left-col__user-footer__avatar {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .left-col__user-footer__card {
   display:flex;
