@@ -18,6 +18,7 @@
   --show-more-color: #1da1f2;
   --blue-100:#1C9BE9;
   --gray-700: #1C2732;
+  --gray-200: #232E38;
   --green-100: 0, 186, 124;
   --red-500: 249, 24, 128;
 
@@ -113,7 +114,7 @@ ul {
   padding: 10px 24px 10px 10px;
   color: var(--text-color);
   border-radius: 25px;
-  font-weight: bold;
+
 }
 
 .left-col__menu__container:hover {
@@ -359,21 +360,46 @@ ul {
 
 /* tweet simple template - start */
 
+.thread{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+  padding: 8px 0 0;
+
+}
 .tweet-template{
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid var(--border-color);
-  padding: 8px;
+  /* border-bottom: 1px solid var(--border-color);
+  padding: 8px; */
+
 }
 
-.tweet-template:hover{
+.thread:hover{
   background-color: var(--gray-700);
 }
+
 
 .tweet-template__user-card{
   width: 80px;
   text-align: center;
   display: block;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.tweet-template__vertical-border{
+    display: block;
+    width: 2px;
+    height: calc(100% - 50px);
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    background-color: var(--border-color);
+    background-clip: padding-box;
+    margin-top : 4px;
+   
 }
 
 .tweet-template__user-avatar{
@@ -392,7 +418,6 @@ ul {
    width: calc(100% - 80px); 
 
 }
-
 .tweet-template__header{
   display: flex;
   width: 100%;
@@ -510,6 +535,165 @@ ul {
 
 /* tweet simple template - End */
 
+
+/* tweet template replies - Start */
+
+.tweet-template__replies{
+  padding-top: 4px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.tweet-template__replies:hover{
+  background-color: var(--gray-200);
+}
+
+
+.replies__user-card{
+  width: 80px;
+  text-align: center;
+  display: block;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.replies__user-avatar{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.replies__user-card:hover , .replies__user-avatar{
+  opacity: 0.9;
+}
+
+
+.replies__container{
+  display: flex;
+  flex-direction: column;
+   width: calc(100% - 80px); 
+
+}
+
+.replies__header{
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.replies__more-info-icon {
+  padding:  8px 10px;
+  color: var(--link-color);
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: 4px;
+}
+
+.replies__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.replies__user__name{
+  color: var(--text-color);
+  margin: 0;
+  font-size: 15px;
+}
+
+.replies__user__handel{
+  font-size: 15px;
+  color: var(--link-color);
+  margin-left: 4px;
+  margin-top: 0;
+}
+
+.replies__user{
+  display:flex;
+}
+
+.replies__user:hover .replies__user__name{
+  text-decoration: underline;
+}
+
+.replies__time{
+  font-size: 15px;
+  color: var(--link-color);
+  margin-left: 4px;
+}
+
+.replies__time:hover{
+  text-decoration: underline;
+}
+
+.replies__more-info-icon:hover {
+  background-color: var(--more-info-bg-color);
+  color: var(--more-info-color);
+}
+
+.replies__content{
+  margin: 8px 0 ;
+}
+
+.replies__footer{
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.replies__footer__icon{
+ flex-grow: 1;
+ color: var(--gray-800);
+ text-decoration: none;
+ font-size: 14px;
+}
+
+.replies__icon{
+  padding:8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.replies__icon__reply:hover{
+  background-color: var(--more-info-bg-color);
+  color: var(--more-info-color);
+}
+
+.replies__icon__reply:hover ~ .reply__times {
+  color: var(--more-info-color);
+}
+
+.replies__icon__retweet:hover{
+  background-color: rgba(var(--green-100),0.18);
+  color: rgb(var(--green-100));
+}
+
+.replies__icon__retweet:hover ~ .retweet__times {
+  color: rgb(var(--green-100));
+}
+
+.replies__icon__like:hover{
+  background-color: rgba(var(--red-500), 0.18);
+  color: rgb(var(--red-500));
+}
+
+.replies__icon__like:hover ~ .like__times {
+  color: rgb(var(--red-500));
+}
+
+.replies__icon__share:hover{
+  background-color: var(--more-info-bg-color);
+  color: var(--more-info-color);
+}
+/* tweet template replies  - End */
 /*---------------------------------------->> Content - End <<------------------------------------------------ */
 
 /* --------------------------------------->> right column - Start<<------------------------------------------ */
