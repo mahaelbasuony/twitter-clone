@@ -499,40 +499,51 @@ ul {
  font-size: 14px;
 }
 
-.tweet-template__icon{
+.tweet-template__icon::before{
   padding:8px;
   border-radius: 50%;
-  margin-right: 4px;
+  margin-right: 4px; 
+}
+.tweet-template__icon__reply::after{
+  content: "4";
 }
 
-.tweet-template__icon__reply:hover{
+.tweet-template__icon__reply:hover::before{
   background-color: var(--more-info-bg-color);
   color: var(--more-info-color);
+  
 }
-
-.tweet-template__icon__reply:hover ~ .reply__times {
+.tweet-template__icon__reply:hover::after {
   color: var(--more-info-color);
+} 
+
+
+.tweet-template__icon__retweet::after{
+  content: "40";
 }
 
-.tweet-template__icon__retweet:hover{
+.tweet-template__icon__retweet:hover::before{
   background-color: rgba(var(--green-100),0.18);
   color: rgb(var(--green-100));
+  
 }
-
-.tweet-template__icon__retweet:hover ~ .retweet__times {
+.tweet-template__icon__retweet:hover::after {
   color: rgb(var(--green-100));
+} 
+
+.tweet-template__icon__like::after{
+  content: "100";
 }
 
-.tweet-template__icon__like:hover{
+.tweet-template__icon__like:hover::before{
   background-color: rgba(var(--red-500), 0.18);
   color: rgb(var(--red-500));
+  
 }
-
-.tweet-template__icon__like:hover ~ .like__times {
+.tweet-template__icon__like:hover::after {
   color: rgb(var(--red-500));
-}
-
-.tweet-template__icon__share:hover{
+} 
+.tweet-template__icon__share:hover::before{
   background-color: var(--more-info-bg-color);
   color: var(--more-info-color);
 }
