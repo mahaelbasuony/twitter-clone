@@ -17,7 +17,6 @@
   --more-info-bg-color: #20394d;
   --show-more-color: #1da1f2;
   --blue-100:#1C9BE9;
-  --blue-200: #1D9BF0;
   --gray-700: #1C2732;
   --green-100: 0, 186, 124;
   --red-500: 249, 24, 128;
@@ -114,26 +113,20 @@ ul {
 }
 .menu__icon__badge{
   padding: 2px 7px;
-  background-color: var(--blue-200);
+  background-color: var(--blue-100);
   border-radius: 75px;
   color: var(--text-color);
   font-size: 12px;
   position: absolute; 
   top: -4px;
-  right: -8px;
+  left: 8px;
   font-weight: bold;
-  display:none;
+  
 }
-.menu__icon__badge-plus{
+.menu__icon__badge::before{
   padding: 3px 7px;
-  background-color: var(--blue-200);
-  border-radius: 75px;
-  color: var(--text-color);
-  font-size: 12px;
-  position: absolute; 
-  top: -4px;
-  right: -18px;
-  font-weight: bold;
+ display:block;
+  
 }
 
 .left-col__menu__container {
