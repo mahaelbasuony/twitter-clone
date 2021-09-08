@@ -18,6 +18,7 @@
   --show-more-color: #1da1f2;
   --blue-100:#1C9BE9;
   --gray-700: #1C2732;
+  --gray-200: #232E38;
   --green-100: 0, 186, 124;
   --red-500: 249, 24, 128;
 
@@ -113,7 +114,7 @@ ul {
   padding: 10px 24px 10px 10px;
   color: var(--text-color);
   border-radius: 25px;
-  font-weight: bold;
+
 }
 
 .left-col__menu__container:hover {
@@ -359,21 +360,47 @@ ul {
 
 /* tweet simple template - start */
 
+.thread{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+  padding: 8px 0 0;
+
+}
 .tweet-template{
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid var(--border-color);
-  padding: 8px;
+  /* border-bottom: 1px solid var(--border-color);
+  padding: 8px; */
+
 }
 
-.tweet-template:hover{
+.thread:hover{
   background-color: var(--gray-700);
 }
+
 
 .tweet-template__user-card{
   width: 80px;
   text-align: center;
   display: block;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.tweet-template__user-card::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: calc(100% - 50px);
+    background-color: var(--border-color);
+    margin-top : 4px;
+   
+}
+.tweet-template:last-child .tweet-template__user-card::after{
+  display: none;
 }
 
 .tweet-template__user-avatar{
@@ -392,7 +419,6 @@ ul {
    width: calc(100% - 80px); 
 
 }
-
 .tweet-template__header{
   display: flex;
   width: 100%;
@@ -510,6 +536,23 @@ ul {
 
 /* tweet simple template - End */
 
+
+/* tweet template replies - Start */
+
+.tweet-template--replies{
+  padding-top: 4px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.tweet-template--replies:hover{
+  background-color: var(--gray-200);
+}
+
+
+
+/* tweet template replies  - End */
 /*---------------------------------------->> Content - End <<------------------------------------------------ */
 
 /* --------------------------------------->> right column - Start<<------------------------------------------ */
