@@ -50,9 +50,28 @@
   
  }
 }
-@media screen and (max-width:999px){
+@media screen and (max-width:1024px){
+  .page__inner{
+    width: 100%;
+    justify-content: center;
+  }
   .right-col{
     display: none;
   }
 }
 
+@media screen and (max-width:630px){
+  .content{
+    margin-right:14px;
+  }
+  .content{
+    border-right: none;
+  }
+}
+@media screen and (max-width:500px){
+ 
+  .left-col{
+    display: none;
+  }
+  .
+}
