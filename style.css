@@ -17,6 +17,7 @@
   --more-info-bg-color: #20394d;
   --show-more-color: #1da1f2;
   --blue-100:#1C9BE9;
+  --blue-200: #1D9BF0;
   --gray-700: #1C2732;
   --gray-200: #232E38;
   --green-100: 0, 186, 124;
@@ -108,6 +109,34 @@ ul {
   align-content: center;
   font-size: 25px;
 }
+.left-col__menu__icon__notification{
+  display: inline-block; 
+  position: relative; 
+}
+.menu__icon__badge{
+  padding: 2px 7px;
+  background-color: var(--blue-200);
+  border-radius: 75px;
+  color: var(--text-color);
+  font-size: 12px;
+  position: absolute; 
+  top: -4px;
+  right: -8px;
+  font-weight: bold;
+  display:none;
+}
+.menu__icon__badge-plus{
+  padding: 3px 7px;
+  background-color: var(--blue-200);
+  border-radius: 75px;
+  color: var(--text-color);
+  font-size: 12px;
+  position: absolute; 
+  top: -4px;
+  right: -18px;
+  font-weight: bold;
+}
+
 .left-col__menu__container {
   font-size: 20px;
   text-decoration: none;
@@ -489,47 +518,53 @@ ul {
   padding: 4px 0;
 }
 
-.tweet-template__footer__icon{
+.tweet-template__footer__action{
  flex-grow: 1;
  color: var(--gray-800);
  text-decoration: none;
  font-size: 14px;
 }
 
+
+.tweet-template__footer__action__container__value {
+  font-size: 12px;
+}
+
 .tweet-template__icon{
   padding:8px;
   border-radius: 50%;
-  margin-right: 4px;
 }
 
-.tweet-template__icon__reply:hover{
+.tweet-template__footer__action--reply .tweet-template__footer__action__container:hover {
+  color: var(--more-info-color);
+}
+
+.tweet-template__footer__action--reply .tweet-template__footer__action__container:hover .tweet-template__icon{
   background-color: var(--more-info-bg-color);
-  color: var(--more-info-color);
 }
 
-.tweet-template__icon__reply:hover ~ .reply__times {
-  color: var(--more-info-color);
+
+.tweet-template__footer__action--retweet .tweet-template__footer__action__container:hover {
+   color: rgb(var(--green-100));
 }
 
-.tweet-template__icon__retweet:hover{
+.tweet-template__footer__action--retweet .tweet-template__footer__action__container:hover .tweet-template__icon{
   background-color: rgba(var(--green-100),0.18);
-  color: rgb(var(--green-100));
 }
 
-.tweet-template__icon__retweet:hover ~ .retweet__times {
-  color: rgb(var(--green-100));
+.tweet-template__footer__action--like .tweet-template__footer__action__container:hover {
+  color: rgb(var(--red-500));
 }
 
-.tweet-template__icon__like:hover{
+.tweet-template__footer__action--like .tweet-template__footer__action__container:hover .tweet-template__icon{
   background-color: rgba(var(--red-500), 0.18);
-  color: rgb(var(--red-500));
 }
 
-.tweet-template__icon__like:hover ~ .like__times {
-  color: rgb(var(--red-500));
+.tweet-template__icon__like::after{
+  content: "100";
 }
 
-.tweet-template__icon__share:hover{
+.tweet-template__footer__action--share .tweet-template__footer__action__container:hover .tweet-template__icon{
   background-color: var(--more-info-bg-color);
   color: var(--more-info-color);
 }
