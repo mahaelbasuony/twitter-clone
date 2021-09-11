@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #151f2b;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginForm {
+  background-color: black;
+  padding: 100px;
+  max-width: 500px;
+  min-height: 350px;
+  border: transparent;
+  border-radius: 25px;
+}
+
+#formelements {
+  text-align: center;
+}
+
+#loginForm input {
+  background: transparent;
+  padding-left: 7px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 60px;
+  color: #fafafa;
+  margin-bottom: 20px;
+  border: 1.5px solid #2f3336;
+  border-radius: 5px;
+  width: 200px;
+}
+
+#loginForm input:focus {
+  border: 2px solid #1d9bf0;
+  outline: none;
+}
+
+#loginForm h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fafafa;
+  margin-bottom: 25px;
+  margin-top: 35px;
+}
+
+#loginForm button {
+  background: #1d9bf0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 270px;
+  border: none;
+  border-radius: 300px;
+  margin-bottom: 20px;
+  color: #fafafa;
+  font-family: arial;
+  font-weight: 800;
+}
+
+#loginForm button:active {
+  opacity: 50%;
+}
+
+#loginForm a {
+  color: #1d9bf0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+
+#loginForm a:active {
+  opacity: 50%;
+}
+
+#loginForm p {
+  color: grey;
+}
+
+#forgotpassword {
+  margin-right: 5px;
+}
+
+#signup {
+  margin-left: 5px;
+}
