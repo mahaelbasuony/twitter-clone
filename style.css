@@ -110,33 +110,16 @@ ul {
   position: relative;
 }
 .menu__icon__badge {
-  padding: 2px 5px;
+  padding: 3px 6px;
   background-color: var(--blue-100);
-  border-radius: 50%;
+  border-radius: 12px;
   color: var(--text-color);
   font-size: 12px;
   position: absolute;
-  top: -4px;
-  left: 8px;
+  top: -6px;
+  left: 10px;
   font-weight: bold;
-  display: none;
-}
-
-.menu__icon__badge__plus {
-  padding: 2px 5px;
   font-family: var(--primary-font);
-  background-color: var(--blue-100);
-  border-radius: 75px;
-  color: var(--text-color);
-  font-size: 12px;
-  position: absolute;
-  top: -4px;
-  left: 8px;
-  font-weight: bold;
-}
-.menu__icon__badge::before {
-  padding: 3px 7px;
-  display: block;
 }
 
 .left-col__menu__container {
