@@ -795,4 +795,22 @@ ul {
 
 /* Who to follow - End */
 
+/* mobile nav menu - Start */
+.mobile-nav-menu{
+  display: none; 
+  position: fixed;
+  bottom:0;
+  width:100%;
+  background-color: var(--main-bg-color);
+  justify-content: space-around;
+  padding: 16px 0px;
+  border-top:1px solid var(--border-color);
+}
+.mobile-nav-menu__container{
+  font-size: 20px;
+  color: var(--text-color);
+  text-decoration: none;
+  
+}
+/* mobile nav menu - End */
 /* --------------------------------------->> right column - End<<------------------------------------------ */

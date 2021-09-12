@@ -73,5 +73,9 @@
   .left-col{
     display: none;
   }
-  .
+  .mobile-nav-menu{
+    display: flex;
+   
+    
+  }
 }
