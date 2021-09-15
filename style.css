@@ -63,18 +63,19 @@ ul {
 /* Logo - Start */
 
 .logo {
-  font-size: 30px;
-  padding: 10px;
+  
+  padding: 25px 13px 10px;
   border-radius: 50%;
   text-decoration: none;
-
-  color: var(--text-color);
 }
 
 .logo:hover {
   background-color: var(--items-bg-color);
 }
-
+.logo__icon{
+  width: 30px;
+  height: 30px;
+}
 /* Logo - End */
 
 /* navigation menu - Start */
@@ -100,12 +101,12 @@ ul {
   padding-left: 24px;
 }
 .left-col__menu__icon {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   display: inline-flex;
   justify-content: center;
   align-content: center;
-  font-size: 25px;
+  
 }
 .left-col__menu__icon__notification {
   display: inline-block;
@@ -127,7 +128,7 @@ ul {
 .left-col__menu__container {
   font-size: 20px;
   text-decoration: none;
-  padding: 10px 24px 10px 10px;
+  padding: 14px 24px 10px 10px;
   color: var(--text-color);
   border-radius: 25px;
 
@@ -155,11 +156,10 @@ ul {
   background-color: var(--tweet-button-color);
   border: none;
   border-radius: 50%;
-  font-size: 20px;
-  color: var(--text-color);
-  padding: 18px 20px;
-  font-weight: bold;
+  padding: 14px 16px;
   margin-top: 30px;
+  width:25px;
+  height: 25px;
   display: none;
 }
 .left-col__tweet-button:hover,
@@ -184,9 +184,11 @@ ul {
   background-color: var(--gray-light);
 }
 
-.left-col__user-footer-icon {
+.left-col__user-footer__icon {
   padding-right: 4px;
   align-self: center;
+  height: 15px;
+  width: 15px;
 }
 
 .left-col__user-footer__avatar {
@@ -244,7 +246,6 @@ ul {
 
 .content__header_icon {
   align-self: center;
-  color: var(--text-color);
   padding: 10px;
   border-radius: 50px;
 }
@@ -314,13 +315,18 @@ ul {
 }
 
 .tweet-box__options__icon {
-  display: inline;
+  display: inline-flex;
   border-radius: 25px;
-  padding: 6px;
-  font-weight: 700;
+  padding: 8px;
   cursor: pointer;
-  font-size: 15px;
-  color: var(--blue-100);
+  
+}
+.tweet-box__options__container{
+  width: 100%;
+}
+.options__icon__styel{
+  height: 15px;
+  width: 15px;
 }
 
 .tweet-box__options__icon:hover {
@@ -354,6 +360,10 @@ ul {
   color: var(--blue-100);
   font-size: 14px;
   font-weight: bold;
+}
+.privacy-message__icon{
+  width: 12px;
+  height: 12px;
 }
 
 .tweet-box__field:focus ~ .tweet-box__privacy,
@@ -433,11 +443,16 @@ ul {
 }
 .tweet-template__more-info-icon {
   padding: 8px 10px;
-  color: var(--link-color);
   border-radius: 50%;
   position: absolute;
   top: -5px;
   right: 4px;
+}
+
+.more-info-icon__style {
+ 
+  height: 15px;
+  width: 15px;
 }
 
 .tweet-template__info {
