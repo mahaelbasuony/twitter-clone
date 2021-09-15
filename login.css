@@ -1,0 +1,116 @@
+/*---------------------------------------------->> GLOBAL - START  <<<----------------------------------------------*/
+:root {
+  --main-bg-color: #151f2b;
+  --text-color: #ffffff;
+  --input-text-bg-color: #253341;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --tweet-button-color: #1a91da;
+  --gray-800: #8394A1;
+}
+.page {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  font-family: var(--primary-font);
+}
+
+.page__inner {
+   display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+/*---------------------------------------------->>> GLOBAL - END  <<<----------------------------------------------*/
+/* Logo - Start */
+.login-contianer{
+  
+  display:flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  width: 342px;
+}
+
+.login-contianer__logo {
+  font-size: 40px;
+  color: var(--text-color);
+  margin:15px 0 25px;
+}
+.login-contianer__title{
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.login-contianer__form {
+  position:relative; 
+  margin-bottom:25px; 
+  width:100%;
+  
+  
+}
+
+.form__input {
+  font-size: 16px;
+  /* width:calc(100% - 12px); */
+  width:100%;
+  height:60px;
+  border: 2px solid var(--input-text-bg-color);
+  background-color: transparent;
+  color: var(--text-color);
+  border-radius: 5px;
+  padding: 10px 10px 0;
+  box-sizing: border-box;
+}
+.form__input:focus{
+  border: 2px solid var(----tweet-button-color);
+  
+
+}
+.form__label {
+  color: var(--gray-800);
+  position:absolute;
+  pointer-events:none;
+  left:10px;
+  top:22px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.form__input:focus ~ .form__label{
+  top:8px;
+  font-size:12px;
+  color: var(--tweet-button-color);
+  
+}
+.login-contianer__login-button{
+  background-color: var(--tweet-button-color);
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  width:100%;
+  color: var(--text-color);
+  padding: 16px;
+  font-weight: bold;
+  margin-bottom:25px; 
+}
+.login-contianer__login-button:disabled {
+  opacity: 0.4;
+}
+.login-contianer__actions{
+  align-self: center;
+}
+.actions__forgot-password, .actions__sign-in{
+  color: var(--tweet-button-color);
+  text-decoration: none;
+}
+
+.actions__forgot-password:hover, .actions__sign-in:hover{
+  
+  text-decoration: underline;
+}
+.actions__forgot-password::after{
+  content: ".";
+  color: var(--gray-800);
+  padding-left: 4px;
+}
+/* Logo - End */
