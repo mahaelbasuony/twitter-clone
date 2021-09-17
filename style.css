@@ -120,10 +120,10 @@ ul {
   color: var(--text-color);
   font-size: 12px;
   position: absolute;
-  top: -6px;
-  left: 10px;
   font-weight: bold;
   font-family: var(--primary-font);
+  top: 197px;
+  left: 55px;
 }
 
 .left-col__menu__container {
@@ -384,7 +384,7 @@ ul {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid var(--border-color);
-  padding: 8px 0 0;
+  padding: 12px 0 0;
 }
 .tweet-template {
   display: flex;
@@ -445,6 +445,7 @@ ul {
   padding: 8px 10px;
   border-radius: 50%;
   position: absolute;
+  color: var(--link-color);
   top: -5px;
   right: 4px;
 }
@@ -452,6 +453,7 @@ ul {
 .more-info-icon__style {
   height: 15px;
   width: 15px;
+  fill: var(--logo-color);
 }
 
 .tweet-template__info {
@@ -601,6 +603,7 @@ ul {
   padding-top: 4px;
   display: flex;
   flex-direction: row;
+  padding-top: 12px;
 }
 
 .tweet-template--replies:hover {
@@ -816,10 +819,11 @@ ul {
 
 .follow__footer__show-more:hover {
   background-color: var(--hover-items-bg-color);
+  color :var(--show-more-color);
 }
 .trends__container__more-info__icon {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }
 /* Who to follow - End */
 
