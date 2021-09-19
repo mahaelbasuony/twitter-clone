@@ -108,10 +108,11 @@ ul {
   align-content: center;
   fill: var(--logo-color);
   padding-left: 6px;
+  position: relative;
 }
 .left-col__menu__icon__notification {
   display: inline-block;
-  position: relative;
+  
 }
 .menu__icon__badge {
   padding: 3px 6px;
@@ -122,8 +123,8 @@ ul {
   position: absolute;
   font-weight: bold;
   font-family: var(--primary-font);
-  top: 197px;
-  left: 55px;
+  top: -7px;
+  left: 15px;
 }
 
 .left-col__menu__container {
@@ -160,6 +161,7 @@ ul {
   margin-top: 30px;
   width: 25px;
   height: 25px;
+  fill: var(--logo-color);
   display: none;
 }
 .left-col__tweet-button:hover,
@@ -330,7 +332,7 @@ ul {
 .options__icon__styel {
   height: 15px;
   width: 15px;
-  fill: var(--logo-color);
+  fill: var(--tweet-button-color);
 }
 
 .tweet-box__options__icon:hover {
@@ -414,8 +416,23 @@ ul {
   background-color: var(--border-color);
   margin-top: 4px;
 }
+.tweet-template__user-card::before{
+  content: '';
+  display: block;
+  width: 2px;
+  padding-top:0px;
+  height: 14px;
+  background-color: var(--border-color);
+}
 .tweet-template:last-child .tweet-template__user-card::after {
   display: none;
+}
+
+.tweet-template:first-child .tweet-template__user-card::before {
+  display: none;
+}
+.tweet-template:first-child .tweet-template__user-card {
+  padding-top:12px;
 }
 
 .tweet-template__user-avatar {
@@ -433,6 +450,7 @@ ul {
   display: flex;
   flex-direction: column;
   width: calc(100% - 80px);
+  padding-top: 12px;
 }
 .tweet-template__header {
   display: flex;
@@ -600,10 +618,9 @@ ul {
 /* tweet template replies - Start */
 
 .tweet-template--replies {
-  padding-top: 4px;
   display: flex;
   flex-direction: row;
-  padding-top: 12px;
+  
 }
 
 .tweet-template--replies:hover {
