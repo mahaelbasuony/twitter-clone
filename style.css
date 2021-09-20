@@ -64,7 +64,7 @@ ul {
 
 .logo {
   font-size: 1.9rem;
-  padding: 0.35em;
+  padding: 0.45em;
   border-radius: 50%;
   text-decoration: none;
   color: var(--text-color);
@@ -109,7 +109,7 @@ ul {
   display: inline-flex;
   justify-content: center;
   align-content: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   fill: var(--logo-color);
   padding-left: 6px;
   position: relative;
@@ -224,6 +224,11 @@ ul {
 .left-col__user-footer__handel {
   font-size: 0.875rem;
   color: var(--link-color);
+}
+.left-col__user-footer__icon{
+  height: 15px;
+  width: 15px;
+  fill: var(--logo-color);
 }
 
 /* fast access settings - End */
@@ -629,7 +634,6 @@ ul {
 /* tweet template replies - Start */
 
 .tweet-template--replies{
-  padding-top: .25rem;
   display: flex;
   flex-direction: row;
   
@@ -785,7 +789,7 @@ ul {
 }
 
 .follow__header__title {
-  margin: 1rem 0 1rem 1.25rems;
+  margin: 1rem 0 1rem 1.25rem;
 }
 
 .follow__container {
