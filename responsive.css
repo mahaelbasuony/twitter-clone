@@ -44,7 +44,7 @@
   .left-col__tweet-button {
     display: none;
   }
-  .left-col__tweet-button__icon {
+  .left-col__tweet-button__container {
     display: block;
   }
 }

@@ -158,22 +158,24 @@ ul {
   font-weight: bold;
   margin-top: 1.875rem;
 }
-.left-col__tweet-button__icon {
+.left-col__tweet-button__container{
   background-color: var(--tweet-button-color);
   border: none;
   border-radius: 50%;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--text-color);
-  padding: 18px 20px;
+  padding: 17px 16px 9px;
   font-weight: bold;
   margin-top: 1.875rem;
+  display: none;
+}
+.tweet-button__container__icon{
   width: 25px;
   height: 25px;
   fill: var(--logo-color);
-  display: none;
 }
 .left-col__tweet-button:hover,
-.left-col__tweet-button__icon:hover {
+.tweet-button__container__icon:hover {
   opacity: 0.9;
   cursor: pointer;
 }
@@ -875,6 +877,26 @@ ul {
   font-size: 1.25rem;
   color: var(--text-color);
   text-decoration: none;
+}
+.mobile-nav-menu__home{
+  width: 25px;
+  height: 25px;
+  fill: var(--logo-color);
+}
+.mobile-nav-menu__search{
+  width: 25px;
+  height: 25px;
+  fill: var(--logo-color);
+}
+.mobile-nav-menu__notification{
+  width: 25px;
+  height: 25px;
+  fill: var(--logo-color);
+}
+.mobile-nav-menu__messages{
+  width: 25px;
+  height: 25px;
+  fill: var(--logo-color);
 }
 /* mobile nav menu - End */
 /* --------------------------------------->> right column - End<<------------------------------------------ */
